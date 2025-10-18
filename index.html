@@ -1,58 +1,166 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Informasi Penting: Implementasi Aplikasi Key Smart di Sekolah</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nutri Soya - Minuman Sehat dari Kedelai Asli</title>
   <style>
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height: 1.6; padding: 24px; color:#111; background:#fff; }
-    .container { max-width:800px; margin:0 auto; }
-    h1{ font-size:1.5rem; margin-bottom:0.5rem; }
-    h2{ font-size:1.15rem; margin:1rem 0 0.5rem 0; }
-    p{ margin:0.5rem 0; }
-    ul{ margin:0.25rem 0 0.75rem 1.25rem; }
-    li{ margin:0.25rem 0; }
-    .badge{ display:inline-block; background:#f1f1f1; padding:0.25rem 0.5rem; border-radius:6px; font-size:0.9rem; }
-    .highlight{ font-weight:600; }
-    .cta{ margin-top:1rem; padding:0.75rem 1rem; background:#0b5cff; color:#fff; border-radius:8px; display:inline-block; text-decoration:none; }
-    blockquote{ margin:0.75rem 0; padding:0.5rem 0.75rem; border-left:4px solid #ddd; background:#fafafa; }
+    body {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      background-color: #ffffff;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(120deg, #e8f8ec, #fffbe6);
+      text-align: center;
+      padding: 60px 20px;
+    }
+    header h1 {
+      color: #2e7d32;
+      font-size: 2.2em;
+      margin-bottom: 10px;
+    }
+    header p {
+      color: #555;
+      font-size: 1.1em;
+      margin-bottom: 20px;
+    }
+    .btn-primary {
+      background-color: #f4c842;
+      color: #333;
+      padding: 12px 28px;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .btn-primary:hover {
+      background-color: #ffd54f;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 900px;
+      margin: 0 auto;
+    }
+    h2 {
+      color: #2e7d32;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .benefits {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      text-align: center;
+    }
+    .benefit {
+      background: #f9fff8;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    .benefit span {
+      font-size: 30px;
+      display: block;
+      margin-bottom: 10px;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      background: #f8fdf8;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+    input, select, textarea, button {
+      padding: 12px;
+      font-size: 1em;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #2e7d32;
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background-color: #388e3c;
+    }
+    footer {
+      background-color: #f0f8f0;
+      text-align: center;
+      padding: 20px;
+      color: #555;
+      font-size: 0.9em;
+    }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>📢 <span class="highlight">Informasi Penting: Implementasi Aplikasi Key Smart di Sekolah</span></h1>
 
-    <p>Dalam upaya meningkatkan kualitas pembelajaran yang adaptif terhadap perkembangan teknologi, sekolah kita mulai memperkenalkan <strong> Aplikasi Key Smart </strong> sebagai <strong>media pembelajaran interaktif berbasis digital</strong>.</p>
+  <header>
+    <h1>Hidup Sehat dengan Nutri Soya</h1>
+    <p>Minuman nabati dari kedelai asli — tinggi protein, rendah gula, dan penuh nutrisi 🌱</p>
+    <a href="#form" class="btn-primary">Coba Gratis Sekarang</a>
+  </header>
 
-    <h2>🔹 <span class="highlight">Poin Utama yang Perlu Ditekankan:</span></h2>
-    <ul>
-      <li><strong>Key Smart bukan aplikasi belajar mandiri.</strong> Aplikasi ini <strong>harus digunakan bersama instruktur/guru/coach</strong> sebagai fasilitator pembelajaran.</li>
-      <li><strong>Peran guru tetap sentral.</strong> Guru bertugas menerangkan materi, mengarahkan, dan memandu siswa dalam menggunakan aplikasi.</li>
-      <li>Setelah mendapat arahan di kelas, barulah siswa dapat membuka kembali aplikasi di rumah untuk mengulang, mencoba, atau berlatih sesuai materi yang telah dipelajari.</li>
-      <li>Dengan pola ini, pembelajaran menjadi <strong>lebih terarah, sistematis, dan sesuai kurikulum</strong>.</li>
-    </ul>
+  <section>
+    <h2>Tentang Nutri Soya</h2>
+    <p style="text-align:center; max-width:700px; margin:auto;">
+      <strong>Nutri Soya</strong> adalah susu kedelai alami yang dibuat untuk kamu yang aktif dan peduli dengan kesehatan.
+      Diformulasikan dari kedelai pilihan tanpa pengawet, tinggi protein nabati, dan rendah gula — cocok untuk gaya hidup modern yang ingin tetap bugar setiap hari.
+    </p>
+  </section>
 
-    <h2>✨ <span class="highlight">Konsep Sistem Pembelajaran dengan Key Smart:</span></h2>
-    <ol>
-      <li><strong>Guru Menyampaikan Materi</strong> → Menggunakan Key Smart sebagai media bantu, lengkap dengan contoh, ilustrasi, dan latihan.</li>
-      <li><strong>Siswa Mengikuti Interaktif</strong> → Berinteraksi langsung dengan aplikasi di bawah arahan guru, sehingga pembelajaran lebih hidup.</li>
-      <li><strong>Latihan Mandiri di Rumah</strong> → Siswa dapat membuka kembali materi yang sudah diajarkan, memperdalam pemahaman, dan berlatih komunikasi.</li>
-      <li><strong>AI sebagai Asisten Belajar</strong> → Aplikasi memfasilitasi interaksi, tanya-jawab, dan latihan percakapan, terutama pada pelajaran <strong>Bahasa Inggris</strong>.</li>
-    </ol>
+  <section>
+    <h2>Manfaat Utama</h2>
+    <div class="benefits">
+      <div class="benefit">
+        <span>🌱</span>
+        <p>Sumber protein nabati alami</p>
+      </div>
+      <div class="benefit">
+        <span>💪</span>
+        <p>Mendukung energi & pemulihan otot</p>
+      </div>
+      <div class="benefit">
+        <span>🧊</span>
+        <p>Rendah gula, segar, dan alami</p>
+      </div>
+      <div class="benefit">
+        <span>🥛</span>
+        <p>Cocok untuk gaya hidup aktif</p>
+      </div>
+    </div>
+  </section>
 
-    <h2>🎯 <span class="highlight">Target Awal:</span></h2>
-    <p>Dalam kurun waktu <strong>3 bulan</strong>, diharapkan siswa sudah mampu melakukan percakapan sederhana dalam bahasa Inggris sehari-hari, baik di sekolah maupun di rumah.</p>
+  <section id="form">
+    <h2>Daftar Uji Coba Gratis</h2>
+    <form onsubmit="event.preventDefault(); alert('Terima kasih! Data kamu telah terkirim.');">
+      <input type="text" placeholder="Nama Lengkap" required />
+      <input type="email" placeholder="Email" required />
+      <input type="tel" placeholder="Nomor WhatsApp" required />
+      <select required>
+        <option value="">Aktivitas Harian</option>
+        <option>Gym / Fitness</option>
+        <option>Pekerja Kantoran</option>
+        <option>Mahasiswa</option>
+        <option>Lainnya</option>
+      </select>
+      <input type="text" placeholder="Kota / Domisili" required />
+      <textarea rows="3" placeholder="Alasan ingin mencoba Nutri Soya..."></textarea>
+      <button type="submit">Kirim Pendaftaran</button>
+    </form>
+  </section>
 
-    <blockquote>
-      <p><span class="highlight">💡 Kesimpulan</span><br />
-      Key Smart adalah <strong>inovasi media pembelajaran interaktif</strong> yang menghadirkan kolaborasi harmonis antara <strong>guru sebagai fasilitator utama</strong> dan <strong>teknologi sebagai pendukung</strong>. Dengan pendekatan ini:</p>
-      <ul>
-        <li>Guru lebih mudah dalam mentransfer pengetahuan.</li>
-        <li>Siswa lebih aktif, kreatif, dan komunikatif.</li>
-        <li>Proses belajar tidak lagi monoton, tetapi <strong>hidup, menyenangkan, dan terarah</strong>.</li>
-      </ul>
-      <p>🚀 Dengan Key Smart, kita tidak hanya mengajarkan ilmu, tetapi juga membangun <strong>kebiasaan komunikasi nyata</strong> yang bisa langsung dipraktikkan siswa dalam kehidupan sehari-hari.</p>
-      </blockquote>
-  </div>
+  <footer>
+    <p>Mari mulai hidup sehat dari langkah kecil — segelas Nutri Soya setiap hari 💛</p>
+    <p>© 2025 Nutri Soya | IG: @nutrisoya.id</p>
+  </footer>
+
 </body>
 </html>
